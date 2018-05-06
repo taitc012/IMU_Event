@@ -1,0 +1,4 @@
+
+ remember to add below into crontab
+ @reboot sh /home/pi/IMU_Event/launcher.sh > /home/pi/IMU_Event/Log/button.log 2>&1
+
