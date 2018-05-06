@@ -6,7 +6,7 @@ import getopt
 import time
 
 
-UDP_IP = "192.168.43.118"
+UDP_IP = "140.113.193.20"
 UDP_PORT = 5566
 
 try:

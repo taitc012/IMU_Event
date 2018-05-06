@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import uuid 
 import sys, os, math, time, thread, smbus, random, requests
 import Queue

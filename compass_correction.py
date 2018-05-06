@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import sys, os, math, time, thread, smbus, random, requests
 #import Adafruit_BMP.BMP085 as BMP085
 import Queue
