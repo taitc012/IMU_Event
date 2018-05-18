@@ -4,5 +4,5 @@
 
 cd /
 cd home/pi/IMU_Event
-sudo python button.py
+sudo -u pi ./button.py
 cd /
