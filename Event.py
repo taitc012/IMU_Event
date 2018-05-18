@@ -55,8 +55,8 @@ def check_step():
     scale = 0.92
     #com_x_offset = -209
     #com_y_offset = -106
-    com_x_offset = -30
-    com_y_offset = -190
+    com_x_offset = 3
+    com_y_offset = -376
     acc_z_offset = -2500
 
     normList = [0] * 4
@@ -93,8 +93,7 @@ def check_step():
                         bearing += 2 * math.pi
                     bearing = 2 * math.pi - bearing
 
-                    mybaro = 993.76	#float('{0:0.2f}'.format(sensor.read_pressure()))/100.0
-                    imuString = 'I ' + str(time.time()) + ' ' + str(steplength) + ' ' + str(bearing) + ' ' + str(mybaro)
+                    imuString = 'I ' + str(time.time()) + ' ' + str(steplength) + ' ' + str(bearing) + ' '
                     sys.stdout.write(imuString+'\n')
                     sys.stdout.flush()
 
@@ -103,8 +102,7 @@ def check_step():
 def main():
 
     #imu event
-    mybaro = 993.76#float('{0:0.2f}'.format(sensor.read_pressure())) / 100.0
-    imuString = 'I ' + str(time.time()) + ' 0 0 ' + str(mybaro)
+    imuString = 'I ' + str(time.time()) + ' 0 0 '
     #print imuString
     sys.stdout.write(imuString+'\n')
     sys.stdout.flush()
