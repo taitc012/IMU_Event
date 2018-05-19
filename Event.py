@@ -57,8 +57,7 @@ def check_step():
     #com_y_offset = -106
     com_x_offset = 3
     com_y_offset = -376
-    #acc_z_offset = -2500
-    acc_z_offset = -500
+    acc_z_offset = -2500
 
     normList = [0] * 4
     averageList = [0] * 3
@@ -77,12 +76,12 @@ def check_step():
             total += normList[i % 4]
             average = total / 4
             averageList[i % 3] = average
-"""
+            """
             output_str = '{0:3.2f}, {1:3.2f}, {2:3.2f}'.format(averageList[(i- 2) % 3],averageList[(i - 1) % 3],averageList[(i) % 3])
             sys.stdout.write(output_str+'\n')
             sys.stdout.flush()
             time.sleep(0.1)
-"""
+            """
 
             if averageList[(i - 1) % 3] < averageList[(i - 2) % 3] and averageList[(i - 1) % 3] < averageList[(i) % 3] and averageList[(i - 1) % 3] < 1:
                 cur_time = time.time()
